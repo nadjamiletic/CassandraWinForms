@@ -1,0 +1,38 @@
+CREATE TABLE "Grad" (
+    "gradid" text,
+    drzava text,
+    "stanica" text,
+    PRIMARY KEY ("gradid","stanica")
+);
+
+CREATE TABLE "Komentar" (
+    "sadrzaj" text,
+    "autor" text,
+    brlike int,
+    brunlike int,
+    PRIMARY KEY ("autor","sadrzaj")
+);
+
+
+CREATE TABLE "StanjeStanica" (
+    "stanicaid" text,
+    "rekaid" text,
+    "mesec" text,
+    vodostaj int,
+    promenavodostaja int,
+    proticaj int,
+    temperatura int,
+    "sat" int,
+    "dan" int,
+    PRIMARY KEY ("stanicaid","rekaid","mesec","dan","sat")
+);
+
+CREATE TABLE "Reka" (
+    "rekaid" text,
+    "gradid" text,
+    "stanicaid" text,
+    PRIMARY KEY ("rekaid","stanicaid","gradid")
+);
+
+
+
