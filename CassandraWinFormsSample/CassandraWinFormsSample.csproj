@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F19DEAC7-29FD-47A3-9B4E-58B5CF4081DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CassandraWinFormsSample</RootNamespace>
+    <AssemblyName>CassandraWinFormsSample</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CGrad.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CGrad.Designer.cs">
+      <DependentUpon>CGrad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OstaviKomentar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OstaviKomentar.Designer.cs">
+      <DependentUpon>OstaviKomentar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CProticaj.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CProticaj.Designer.cs">
+      <DependentUpon>CProticaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CPVodostaja.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CPVodostaja.Designer.cs">
+      <DependentUpon>CPVodostaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CSve.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CSve.Designer.cs">
+      <DependentUpon>CSve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTemperatura.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CTemperatura.Designer.cs">
+      <DependentUpon>CTemperatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CVodostaj.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CVodostaj.Designer.cs">
+      <DependentUpon>CVodostaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlavnaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlavnaForma.Designer.cs">
+      <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grad.Designer.cs">
+      <DependentUpon>Grad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Klijent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Klijent.Designer.cs">
+      <DependentUpon>Klijent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pocetna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pocetna.Designer.cs">
+      <DependentUpon>Pocetna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proticaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proticaj.Designer.cs">
+      <DependentUpon>Proticaj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PVodostajaGrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PVodostajaGrafik.Designer.cs">
+      <DependentUpon>PVodostajaGrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reka.Designer.cs">
+      <DependentUpon>Reka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stanica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stanica.Designer.cs">
+      <DependentUpon>Stanica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Temperatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Temperatura.Designer.cs">
+      <DependentUpon>Temperatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VidiUtiske.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VidiUtiske.Designer.cs">
+      <DependentUpon>VidiUtiske.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VodostajForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VodostajForma.Designer.cs">
+      <DependentUpon>VodostajForma.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CGrad.resx">
+      <DependentUpon>CGrad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OstaviKomentar.resx">
+      <DependentUpon>OstaviKomentar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CProticaj.resx">
+      <DependentUpon>CProticaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CPVodostaja.resx">
+      <DependentUpon>CPVodostaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CSve.resx">
+      <DependentUpon>CSve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTemperatura.resx">
+      <DependentUpon>CTemperatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CVodostaj.resx">
+      <DependentUpon>CVodostaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlavnaForma.resx">
+      <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grad.resx">
+      <DependentUpon>Grad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Klijent.resx">
+      <DependentUpon>Klijent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pocetna.resx">
+      <DependentUpon>Pocetna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Proticaj.resx">
+      <DependentUpon>Proticaj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PVodostajaGrafik.resx">
+      <DependentUpon>PVodostajaGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reka.resx">
+      <DependentUpon>Reka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stanica.resx">
+      <DependentUpon>Stanica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Temperatura.resx">
+      <DependentUpon>Temperatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VidiUtiske.resx">
+      <DependentUpon>VidiUtiske.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VodostajForma.resx">
+      <DependentUpon>VodostajForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\VodostajForma.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CassandraDataLayer\CassandraDataLayer.csproj">
+      <Project>{0043af36-f146-45f3-b8e7-609430317cc4}</Project>
+      <Name>CassandraDataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
