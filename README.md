@@ -1,1 +1,2 @@
-C# aplikacija za prikaz podataka o stanjima reka u Srbiji. 
+C# aplikacija za prikaz podataka o stanjima reka u Srbiji. Aplikacija se sastoji iz dva dela: deo za administratore i deo za klijente. Administrator ima mogućnost da dodaje nove ili vidi informacije o već postojećim podacima o rekama, gradovima, hidrološkim stanicama i izmerenim vrednostima. 
+Klijent nakon odabira reke, stanice, meseca i dana dobija podatke o proticaju, vodostaju, temperaturi i/ili promeni vodostaja u obliku tabele ili grafika. Takođe, klijent ima mogućnost da ostavi komentar i da vidi listu postojećih komentara.
